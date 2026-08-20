@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student feedback form">
+    <title>Submit Feedback</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Submit Feedback</h1>
+        <p>We would love to hear your feedback.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="grades.html">Grades</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+
+            <h2>Feedback Form</h2>
+
+            <form>
+
+                <p>
+                    <label for="name">Full Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="type">Feedback Type:</label>
+
+                    <select id="type" name="feedbackType">
+                        <option value="course">Course</option>
+                        <option value="website">Website</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+
+                <fieldset>
+
+                    <legend>Rate Your Experience</legend>
+
+                    <input
+                        type="radio"
+                        id="excellent"
+                        name="rating"
+                        value="excellent"
+                    >
+                    <label for="excellent">Excellent</label>
+
+                    <input
+                        type="radio"
+                        id="good"
+                        name="rating"
+                        value="good"
+                    >
+                    <label for="good">Good</label>
+
+                    <input
+                        type="radio"
+                        id="average"
+                        name="rating"
+                        value="average"
+                    >
+                    <label for="average">Average</label>
+
+                    <input
+                        type="radio"
+                        id="poor"
+                        name="rating"
+                        value="poor"
+                    >
+                    <label for="poor">Poor</label>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Technologies You Like</legend>
+
+                    <input
+                        type="checkbox"
+                        id="html"
+                        name="technology"
+                        value="html"
+                    >
+                    <label for="html">HTML</label>
+
+                    <input
+                        type="checkbox"
+                        id="javascript"
+                        name="technology"
+                        value="javascript"
+                    >
+                    <label for="javascript">JavaScript</label>
+
+                    <input
+                        type="checkbox"
+                        id="cpp"
+                        name="technology"
+                        value="cpp"
+                    >
+                    <label for="cpp">C++</label>
+
+                </fieldset>
+
+                <p>
+                    <label for="message">Your Feedback:</label>
+                </p>
+
+                <p>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        cols="40"
+                        placeholder="Write your feedback here..."
+                    ></textarea>
+                </p>
+
+                <button type="submit">Submit Feedback</button>
+                <button type="reset">Reset</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dilip Kumar Sori. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
